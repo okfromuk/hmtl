@@ -1,13 +1,14 @@
 name: Hello workflow
+
 on:
- push:
-  branches:
-    - master
+  push:
+    branches:
+      - master
 
 jobs:
   say-hello:
     runs-on: ubuntu-latest
 
     steps:
-      -name: First step
-      run: echo "Hello from your first GitHub Action!"
+      - name: First step
+        run: echo "Hello from your first GitHub Action!"
